@@ -6,10 +6,10 @@ pre = ["cargo-generate/remove_rprs.rhai"]
 
 [placeholders]
 flash_method = { prompt = "Which flashing method do you intend to use?", choices = [
-  "probe-rs",
-  "elf2uf2-rs",
-  "custom",
-  "none"
+	"probe-rs",
+	"elf2uf2-rs",
+	"custom",
+	"none"
 ], default = "probe-rs", type = "string" }
 
 [conditional.'flash_method == "custom"'.placeholders]
